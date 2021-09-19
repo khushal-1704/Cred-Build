@@ -1,0 +1,67 @@
+.pageTwo {
+  background-color: rgb(15, 15, 15);
+  /* display: flex; */
+  position: relative;
+  height: 800px;
+  min-height: 100%;
+  /* width: 100vw; */
+  background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png");
+  background-position: right top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.phone__display {
+}
+
+.phone__center {
+  /* position: absolute; */
+  /* min-height: 70%; */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+  bottom: -54px;
+}
+
+.phone__left-1 {
+  position: absolute;
+  left: 21%;
+  transform: translate(-50%);
+  z-index: 10;
+  bottom: -222px;
+}
+
+.phone__left-2 {
+  position: absolute;
+  left: 25%;
+  transform: translate(-8%);
+  z-index: 50;
+  bottom: -140px;
+}
+
+.phone__right-1 {
+  position: absolute;
+  right: 9%;
+  transform: translate(-50%);
+  z-index: 50;
+  bottom: -140px;
+}
+
+.phone__right-2 {
+  position: absolute;
+  right: -5%;
+  transform: translate(-50%);
+  z-index: 10;
+  bottom: -222px;
+}
+
+@keyframes phoneShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

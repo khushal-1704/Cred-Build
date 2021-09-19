@@ -1,0 +1,45 @@
+.pageThree {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  padding: 200px 200px 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_one {
+  line-height: 80px;
+  font-weight: 900;
+  opacity: 0.8;
+  font-size: 100px;
+  letter-spacing: -6px;
+}
+
+.top_two {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.bottom_one {
+  font-size: 18px;
+  /* font-family: gilroy-semibold; */
+  letter-spacing: 0px;
+  line-height: 28px;
+  white-space: pre-line;
+  max-width: 630px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  margin-top: 0px;
+  /* width: 20%; */
+  color: black;
+  display: inline-flex;
+}

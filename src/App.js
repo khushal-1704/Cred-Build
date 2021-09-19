@@ -1,56 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import Header from './components/Header';
+import PageOne from './components/PageOne';
+import PageTwo from './components/PageTwo';
+import PageThree from './components/PageThree';
+import Brand from './components/Brand';
+import Footer from './components/Footer';
 
 function App() {
+  const [show, handleShow] = useState(false)
+  const transitionNavBar = () => {
+    if (window.scrollY > -200) {
+      handleShow(true)
+    } else {
+      handleShow(false)
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="app">
+      {show && <Header />}
+      {/* <Header /> */}
+      <PageOne />
+      <PageTwo />
+      <PageThree header={'feel special  more often.'} sndHeader={'exclusive rewards for paying your bills'} detail={'every time you pay your credit card bills on CRED, you receive CRED coins. you can use these to win exclusive rewards or get special access to curated products and experiences. on CRED, good begets good.'} btn={'Explore reward'} backgroundImg={'deserve-more-bg.jpg'} />
+      <Brand />
+      <PageThree header={'we take your money matters seriously.'} sndHeader={'so that you don’t have to.'} detail={'never miss a due date with reminders to help you pay your bills on time, instant settlements mean you never wait for your payments to go through and statement analysis lets you know where your money goes, always.'} btn={'Experience the upgrade'} backgroundImg={'money-matters-bg.jpg'} />
+      {/* <Footer /> */}
     </div>
   );
 }
