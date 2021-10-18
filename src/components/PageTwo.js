@@ -3,14 +3,24 @@ import './PageTwo.css'
 
 
 function PageTwo() {
+
     return (
         <section className='pageTwo'>
             <div className="phone__display">
-                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/left-2.png" alt="" className="phone__left-1" d />
-                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/left-1.png" alt="" className="phone__left-2" />
-                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/center.png" alt="" className="phone__center" />
-                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/right-1.png" alt="" className="phone__right-1" />
-                <img src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/right-2.png" alt="" className="phone__right-2" />
+                <img src="/images/p-left-1.png" alt="" className="phone__left-1 phone__width" data-aos='fade-up-left' />
+
+                <img src="/images/p-left-2.png" alt="" className="phone__left-2 phone__width"
+                    data-aos='fade-up-left' />
+
+
+                <img src="/images/p-center.png" alt="" className="phone__center phone__width"
+                    data-aos='fade-up'
+                />
+                <img src="/images/p-right-2.png" alt="" className="phone__right-1 phone__width"
+                    data-aos='fade-up-right'
+                />
+                <img src="/images/p-right-1.png" alt="" className="phone__right-2 phone__width"
+                    data-aos='fade-up-right' />
             </div>
         </section>
     )

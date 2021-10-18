@@ -7,7 +7,7 @@ const PageOne = () => {
             <div className="page__header">
                 <div className="header__logo">
                     <a href="#">
-                        <img src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png" alt="" className='cred__logo' />
+                        <img src="/images/cred-logo.png" alt="" className='cred__logo' />
                     </a>
                 </div>
                 <div className="top__options">

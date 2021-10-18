@@ -2,7 +2,7 @@
   background-color: rgb(15, 15, 15);
   /* display: flex; */
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 100%;
   /* width: 100vw; */
   background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png");
@@ -11,57 +11,118 @@
   overflow: hidden;
 }
 
-.phone__display {
-}
-
-.phone__center {
-  /* position: absolute; */
-  /* min-height: 70%; */
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 100;
-  bottom: -54px;
-}
-
 .phone__left-1 {
   position: absolute;
-  left: 21%;
-  transform: translate(-50%);
+  left: 11%;
+  bottom: -200px;
   z-index: 10;
-  bottom: -222px;
 }
 
 .phone__left-2 {
   position: absolute;
-  left: 25%;
-  transform: translate(-8%);
+  left: 27%;
+  bottom: -136px;
   z-index: 50;
-  bottom: -140px;
+}
+
+.phone__center {
+  position: absolute;
+  left: 38%;
+  bottom: -50px;
+  z-index: 100;
 }
 
 .phone__right-1 {
   position: absolute;
-  right: 9%;
-  transform: translate(-50%);
+  right: 24%;
+  bottom: -136px;
   z-index: 50;
-  bottom: -140px;
 }
 
 .phone__right-2 {
   position: absolute;
-  right: -5%;
-  transform: translate(-50%);
+  right: 11%;
+  bottom: -200px;
   z-index: 10;
-  bottom: -222px;
 }
 
-@keyframes phoneShow {
-  0% {
-    opacity: 0;
+.phone__width {
+}
+
+@media screen and (max-width: 1100px) {
+  .pageTwo {
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  .phone__width {
+    width: 300px;
+  }
+  .phone__display {
+  }
+  .phone__left-1 {
+    left: 5%;
+  }
+  .phone__left-2 {
+    left: 19%;
+  }
+  .phone__center {
+    left: 33%;
+  }
+  .phone__right-1 {
+    right: 19%;
+  }
+  .phone__right-2 {
+    right: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pageTwo {
+  }
+  .phone__width {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pageTwo {
+  }
+  .phone__width {
+    width: 214px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pageTwo {
+  }
+  .phone__width {
+    width: 214px;
+  }
+  .phone__left-1 {
+    left: -5%;
+  }
+  .phone__left-2 {
+    left: 7%;
+  }
+  .phone__center {
+    left: 26%;
+  }
+  .phone__right-1 {
+    right: 7%;
+  }
+  .phone__right-2 {
+    right: -5%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .phone__center {
+    left: 16%;
+  }
+  .phone__left-1 {
+    left: -10%;
+  }
+  .phone__left-2 {
+    left: 3%;
+  }
+  .phone__right-1 {
+    right: -6%;
+  }
+  .phone__right-2 {
+    right: -10%;
   }
 }

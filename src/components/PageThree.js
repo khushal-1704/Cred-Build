@@ -3,7 +3,7 @@ import './PageThree.css'
 
 function PageThree({ header, sndHeader, detail, backgroundImg, btn }) {
     return (
-        <section className='pageThree' style={{ backgroundImage: `url(https://web-images.credcdn.in/_next/assets/images/home-page/${backgroundImg})` }}>
+        <section className='pageThree' style={{ backgroundImage: `url(${backgroundImg})` }}>
             <div className="container">
                 <div className='box__top' >
                     <div className="top_one">{header}</div>
@@ -19,4 +19,4 @@ function PageThree({ header, sndHeader, detail, backgroundImg, btn }) {
     )
 }
 
-export default PageThree
+export default PageThree;

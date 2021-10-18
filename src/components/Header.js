@@ -1,11 +1,11 @@
 import React from 'react'
 import './Header.css'
 
-function Header() {
+function Header({ opacity }) {
     return (
-        <div className='header'>
+        <div className='header' style={{ opacity: `${opacity}` }}>
             <div className="header__logo">
-                <a ><img className='cred__logo' src="https://web-images.credcdn.in/_next/assets/images/home-page/cred-logo.png" alt="" /></a>
+                <a ><img className='cred__logo' src="/images/cred-logo.png" alt="" /></a>
             </div>
 
             <div className="header__options">
